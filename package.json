@@ -1,0 +1,19 @@
+{
+  "name": "smp-oss",
+  "version": "1.0.0",
+  "description": "从alioss下载或者上传文件夹",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zjy2931/smp-oss.git"
+  },
+  "keywords": [
+    "alioss"
+  ],
+  "author": "zhangjy",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^6.17.1",
+    "single-line-log": "^1.1.2"
+  }
+}
