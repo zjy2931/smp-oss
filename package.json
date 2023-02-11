@@ -1,6 +1,6 @@
 {
   "name": "smp-oss",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "从alioss下载或者上传文件夹",
   "main": "index.js",
   "repository": {
