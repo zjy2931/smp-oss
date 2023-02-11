@@ -4,7 +4,7 @@
  * @Autor: zhangjy
  * @Date: 2023-01-14 16:51:16
  * @LastEditors: zhangjy
- * @LastEditTime: 2023-01-14 18:35:29
+ * @LastEditTime: 2023-02-11 16:08:11
  */
 const OSS = require('ali-oss');
 const fs = require('fs');
@@ -63,7 +63,7 @@ module.exports = class SmpOss {
     async copyOssFile(ossDir) {
         await this.getOssFileList(ossDir);
 
-        let newDir = `${this.nowTimeString()}.${ossDir}`;
+        let newDir = `${this.nowTimeString()}.${ossDir}-${new Date().toLocaleDateString().replace(/\//g,'-')}`;
 
         this.ossFileList.forEach(async obj => {
             let name = obj.name.replace(ossDir, newDir);
